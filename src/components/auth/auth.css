@@ -1,0 +1,103 @@
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+
+.card-title {
+  color: #3e3e3e;
+  font-weight: 600;
+  font-size: 1.35rem;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.card form {
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-container input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 15px;
+  margin: 1px;
+  font-size: 16px;
+  color: #202124;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-container input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.input-container input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.input-container label {
+  position: absolute;
+  padding: 0 5px;
+  color: #80868B;
+  left: 10px;
+  top: 50%;
+  background-color: transparent;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.input-container input:focus {
+  border: 2px solid #04A777;
+  margin: 0;
+}
+
+.input-container input:not(:placeholder-shown)+label, .input-container input:focus+label {
+  color: #80868B;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  background-color: white;
+}
+
+.input-container input:focus+label {
+  color: #04A777;
+}
+
+.input-container .submit-button {
+  margin-left: auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 4px;
+  background-color: #006647;
+}
+
+.error-box {
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #F5C6CB;
+  border-radius: 4px;
+  padding: 10px 15px;
+  background-color: #F8D7DA;
+  font-size: 14px;
+  font-weight: 300;
+  color: #721F23;
+}
